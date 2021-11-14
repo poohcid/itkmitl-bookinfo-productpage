@@ -13,6 +13,6 @@ ingress:
   path: "/student8/productpage(/|$)(.*)"
   serviceType: ClusterIP
 extraEnv:
-  RATINGS_SERVICE: http://bookinfo-prd-ratings:8080
+  RATINGS_HOSTNAME: http://bookinfo-prd-ratings:8080
   REVIEWS_HOSTNAME: http://bookinfo-prd-reviews:8082
   DETAILS_HOSTNAME: http://bookinfo-prd-details:8081
